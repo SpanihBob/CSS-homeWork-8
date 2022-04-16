@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/search" method="POST">
+    <div class="container">
+        <div  class="Registration_form">
+            <h1>Registration form</h1>
+            <div class="sto">
+                <div><img src="../img/username.png" alt=""></div>
+                <div><input type="text" id="username" placeholder="Username"></div>
+            </div>
+            <div class="sto">
+                <div><img src="../img/email.png" alt=""></div>
+                <div><input type="email" id="email" placeholder="Email Adress"></div>
+            </div>
+            <div class="password">
+                <div class="pas1">
+                    <div><img src="../img/pswd.png" alt=""></div>
+                    <div><input type="password" id="password" placeholder="password"></div>
+                </div>
+                <div><input type="password" placeholder="Confirm password" id="Confirm_password"></div>
+            </div>        
+        </div>
+
+        <div class="Personal_details">
+            <h1>Personal details</h1>
+            <div class="name">
+                <div><input type="text" placeholder="First name" id="first_name"></div>
+                <div><input type="text" placeholder="Last name" id="last_name"></div>
+            </div>
+            <br>
+            <div class="sex_date">
+                <div><select name="select" id="name">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select></div>
+                <div><input type="date" id="date"></div>
+            </div>          
+        </div>
+    </div>
+        <div><div><input type="checkbox" id="check1"><label for="check1">I want to reseive mews and spesial offers</label></div>
+             <div><input type="checkbox" id="check2"><label for="check2">I agree the Terms and Conditions</label></div>
+        </div>
+        <hr>
+        <div><input type="submit" value="SUBMIT" id="submit"></div>
+    </form>
+</body>
+</html>

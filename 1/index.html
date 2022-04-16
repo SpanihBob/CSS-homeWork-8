@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+   <title>форма для ввода данных кредитной карты</title>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="credit">
+            <h2>CREDIT CARD DETAILS</h2>
+        </div>
+        <div>
+            <label for="number">Card Number</label><br>
+            <!-- maxlength="12" максимальное колличество вводимых символов -->
+            <input type="text" maxlength="16" id="number" name="number_card" placeholder="1234 5678 9012 3456" pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}">
+        </div>
+        <div>
+            <label for="name">Name On Card</label><br>
+            <input type="text" id="name" name="name_surname" placeholder="Name Surname">
+        </div>
+        <div class="tree">
+            <div class="prosent">
+                <label for="date">Expiry Date</label><br>
+                <!--  -->
+                <input type="number" id="date" name="mesec" min="1" max="12" placeholder="02">
+            </div>
+            <div class="prosent">
+                <label for="no"></label><br>
+                <input type="number" id="no" name="year" min="2017" max="2050" placeholder="2017">
+            </div>
+            <div class="prosent">
+                <label for="CVV">CVV CVN</label><br>
+                <!-- maxlength="3" максимальное колличество вводимых символов -->
+                <input type="password" id="CVV" name="cvv_cod" maxlength="3"placeholder="&#10033;&#10033;&#10033;">
+            </div>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>

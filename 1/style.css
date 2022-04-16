@@ -1,0 +1,50 @@
+*, *::after, *::before{box-sizing: border-box;}
+body{padding: 5%;
+     background-color: rgb(183, 185, 187);}
+/* стили карты */
+.container{background-color: rgb(56, 192, 192);
+           padding: 60px;
+           height: 350px;
+           width: 600px;
+           position: relative;
+           background-image: url(../img/moon_flag.png);
+           background-size: 55%; /* размер картинки background */
+           background-repeat: no-repeat; /* повтор background без повтора */
+           background-position-x: 340px; /* позиция background */
+           background-position-y: 100px;
+           border-radius: 15px;
+           font-family: monospace;}
+/* стиль ораньжевой полосы */
+.credit{position:relative; 
+        color: aliceblue;  
+        background-color: rgb(240, 81, 8);
+        padding-left: 70px;
+        padding-top: 1px;
+        left: -100px;
+        width: 400px;
+        height: 40px;
+        line-height: 0.5;} /* межстрочный интервал */
+/* стиль синей полосы */
+input[type="text"]{background-color: rgb(150, 212, 214);
+                   border-top: none;
+                   border-right: none;
+                   border-left: none;
+                   margin: 5px;
+                   height: 40px;
+                   width: 325px;}
+.tree{display: flex;      
+      }
+input[type="number"]{background-color: rgb(150, 212, 214);
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    margin: 6px;
+                    height: 40px;
+                    width: 100px;}      
+input[type="password"]{background-color: rgb(150, 212, 214);
+                       border-top: none;
+                       border-right: none;
+                       border-left: none;
+                       margin: 6px;
+                       height: 40px;
+                       width: 100px;}

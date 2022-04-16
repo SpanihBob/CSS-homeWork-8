@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>библиотека со стилями bootstrap</title>
+    <meta name="viewport"
+        content="width=device-width 
+                initial-scale=1.0">
+    <title>Bootstrap</title>
+<!-- подключение стилевого файла фреймворка bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <!-- основной код страницы -->
+<!-- подключение скриптового файла библиотеки jquery, необходимого для работы фреймворка -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+</script>
+<!-- подключение скриптового файла библиотеки popper, необходимого для работы фреймворка -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+</script>
+<!-- подключение скриптового файла фреймворка bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+
+
+    <div class="p-3 m-2">
+    <form action="">
+        <div >
+            <h2>Inputs</h2>
+                <div class="row">
+                    <label for="Text" class="border border-secondary rounded p-2  mx-1 col-3">
+                        <input type="text" placeholder="Enter some text" id="Text" class="border-0" >
+                    </label>
+                    <label class="row border border-success rounded p-2 col-3 mx-1">
+                        <input type="text" placeholder="Valid text" id="Valid_text" class="border-0 text-success col-9">
+                        <img src="../img/valid.png" alt="" class="col-3" style="width: 20px; height: 20px;">
+                    </label>
+                    <label for="Invalid_text" class="row border border-danger text-danger rounded p-2 mx-1 col-3">
+                        <input type="text" placeholder="Invalid text" id="Invalid_text" class="border-0 col-9">
+                        <img src="../img/invalid.png" alt="" class="col-3" style="width: 20px; height: 20px;">
+                    </label>
+                </div>   
+        </div>
+
+        <div><h2>Check boxes</h2>
+        <div>
+
+<!-- делаем кнопку 1 -->
+            <label class="checkl">
+                 <input type="checkbox">
+                 <span class="vc_l"></span>
+               Subscribe
+            </label> 
+
+<!-- делаем кнопку 2 -->
+            <label class="checkl">
+                <input type="checkbox" checked>
+                <span class="vc_l"></span>
+                Subscribe
+            </label> 
+
+</div>        
+            
+        <div>
+            <!-- у радиокнопок задаем один атрибут name чтобы при нажатии выбиралась только одна радиокнопка -->
+            <h2>Radio buttons</h2>
+            <label>Gender:</label>
+            <label class="radio">                
+                <input type="radio" name="Gender" checked>
+                <span class="rad"></span>
+                male
+            </label>
+            <label class="radio">                
+                <input type="radio" name="Gender">
+                <span class="rad"></span>
+                female
+            </label>
+        </div>
+
+        <h2>Buttons</h2>
+        <div class="row">          
+            <input type="buttons" id="Active" name="Active" value="Active" class="mr-1 bg-success rounded border-0 text-white p-2 col-2" style="text-align: center; font-weight: 600;">
+            <input type="buttons" id="Hover_green" name="Hover_green" value="Hover" class="mr-1 col-2 text-white rounded border-0 p-2" style="text-align: center; background-color: rgb(8, 109, 75); font-weight: 600;">
+            <input type="buttons" id="Danger" name="Danger" value="Danger" class="mr-1 col-2 bg-danger rounded border-0 text-white p-2" style="text-align: center; font-weight: 600;">
+            <input type="buttons" id="Hover_red" name="Hover_red" value="Hover" class="mr-1 col-2 text-white rounded border-0 p-2" style=" background-color: rgb(121, 3, 3); text-align: center; font-weight: 600;">
+            <!-- disabled - Делает элемент недоступным. Недоступные элементы не передаются на сервер. -->
+            <input type="buttons" id="Disabled" name="Disabled" disabled value="Disabled" class="mr-1 col-2 p-2 bg-secondary text-white rounded border-0" style="text-align: center; font-weight: 600;">
+            <div class="col-2 row">   
+                    <input type="buttons" id="plus" name="plus" value="+" class="mr-1 col-4 bg-success p-2 text-white rounded-circle border-0" style="text-align: center; width: 30px; font-weight: 600;">
+                    <input type="buttons" id="minus" name="minus" value="-" class="mr-1 col-4 bg-danger p-2 text-white rounded-circle border-0" style="text-align: center; width: 30px; font-weight: 600;">
+                </div>
+            </div>
+        </div>
+ 
+        <div>
+            <h2>Text area</h2>            
+            <div class="row"><Textarea placeholder="Enter some text..." class="col-5" style="min-height: 200px;" ></Textarea></div>
+        </div>
+
+
+
+
+
+    </form>
+    </div>
+</body>
+</html>
